@@ -7,7 +7,9 @@ jobs:
     name: My job
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to foo-bar.surge.sh
+      - uses: actions/checkout@v2
+              
+      - name: Deploy to test-gh-actions.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'test-gh-actions.surge.sh'
