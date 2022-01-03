@@ -1,6 +1,6 @@
 name: My workflow
 
-on: push
+on: release 
 
 jobs:
   my-job:
